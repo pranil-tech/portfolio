@@ -1,34 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:ital,wght@0,400;0,700;0,800;1,300&display=swap');
 
-.body{
+*{
     margin: 0;
-    overflow: hidden;
+    padding: 0;
 }
-.header{
-    background-color: rgb(35, 30, 30);
-    color: white;
-    width: 100vw;
+.container{
+    font-family: 'Fira Sans', sans-serif;
+    height: 400px;
+    background-color: rgb(54, 52, 52);
+    position: relative;
+}
+.social-icons{
+    width: 225px;
+    height: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.avatar-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name {
+    white-space: nowrap;
+    font-size: 15px;
+    color: whitesmoke;
 }
 .info{
+    width: 85%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+.info-main p{
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    height: 75%;
+    font-size: large;
+    color: whitesmoke;
+}
+.more{
     font-size: larger;
     display: flex;
+    padding: 20px 0;
+    width: 277pxb;
 }
-.info button{
+
+.email-button,.cv-button {
+    display: inline-block;
+    padding: 4px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.navbar button{
     padding: 1px 10px;
     font-size: 20px;
     margin: 0 3px;
     cursor: pointer; 
     justify-content: center;
 }
-.container{
-    display: flex;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: larger;
-    height: 90vh;
-    width: 100vw;
-    align-items: center;
+.devPic img{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 115px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 10px;
 }
-#nav .info{
+.username{
+    color: white;
+}
+#nav .contact-me{
     padding: 9px 14px;
     border-radius: 20px;
     font-weight: bold;
@@ -37,7 +98,7 @@
     cursor: pointer; 
   
 }
-.info a{
+.contact-me a{
     text-decoration: none;
     color: black;
 }
@@ -57,18 +118,6 @@
 .container a{
     text-decoration: none;
 }
-.buttons{
-    font-size: larger;
-    display: flex;
-}
-.buttons button{
-    padding: 9px 14px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0 3px;
-    cursor: pointer;
-}
 .info button:hover{
     background-color: black;
 }
@@ -78,10 +127,9 @@
 }
 
 
-.main{
+.header main{
     font-family: 'Fira Sans', sans-serif;
     font-size: 25px;
-    padding: 90px;
 }
 .hello{
     font-size: 40px;
@@ -93,12 +141,6 @@
 }
 .work{
     font-size: 25px;
-}
-.main p{
-    padding:1px;
-    height: 0px;
-    width: 100vw;
-    
 }
 .buttons{
     padding: 50px;
