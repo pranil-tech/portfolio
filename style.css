@@ -78,7 +78,6 @@ body {
 }
 
 .name {
-
   font-size: 15px;
   color: #fff;
 }
@@ -115,7 +114,7 @@ body {
 }
 .email-button:hover,
 .cv-button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: #808080;
 }
 .avatar-container{
@@ -124,9 +123,7 @@ body {
 /* Education grids */
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Adjust the gap as needed */
-    margin-top: 40px; /* Add margin for separation */
+    margin-top: 40px;
 }
   
 .education-item {
@@ -139,5 +136,16 @@ body {
 .education-item h3 {
     margin-bottom: 10px;
     color: #333; /* Set the heading color */
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
 }
   
