@@ -49,9 +49,10 @@ body {
 }
 .social-link {
   text-decoration: none;
-  color: #fff;
+  color: #565454;
   padding:  0 5px;
-  transition: color 0.3s ease;
+  transition: 0.5s ease;
+  display: flex;
 }
 
 .social-link:hover {
@@ -87,7 +88,12 @@ body {
   align-items: center;
 }
 .info-sub{
+  display: flex;
     font-family: 'Roboto', sans-serif;
+    width: 70vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
 }
 .header-subtitle {
   font-size: 20px;
@@ -110,7 +116,7 @@ body {
   margin-right: 10px;
   text-decoration: none;
   color: #fff;
-  background-color: #626161
+  background-color: #626161;
 }
 .email-button:hover,
 .cv-button:hover {
@@ -120,32 +126,177 @@ body {
 .avatar-container{
     justify-content: center;
 }
-/* Education grids */
-.education-grid {
-    display: grid;
-    margin-top: 40px;
+/* main=container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0px;
 }
-  
-.education-item {
-    background-color: #f4f4f4; /* Set the background color */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+
+.buttons {
+  display: flex;
+  flex-direction: row;
 }
-  
-.education-item h3 {
-    margin-bottom: 10px;
-    color: #333; /* Set the heading color */
+
+.buttons button {
+  padding: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #626161;
 }
-.main-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for content */
+  gap: 20px;
+  text-align: center;
+  height: 90vh;
+  width: 60vw;
 }
-.buttons{
-    display: flex;
-    flex-direction: column;
+
+.content,.skill-item p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #928c8c;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-  
+
+.content h3 {
+  margin-bottom: 10px;
+  color: #0d0d0d;
+}
+
+.intern-item {
+  background-color: #928c8c;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intern-item h3 {
+  margin-bottom: 10px;
+  color: #0d0d0d;
+}
+
+.intern-item-1,
+.intern-item-2 {
+  margin-bottom: 20px;
+}
+
+
+/*skill container*/
+
+.skills-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center items horizontally */
+  margin-top: 50px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.skill-grid{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* Three columns, each taking 1/3 of the height */
+  gap: 20px;
+  text-align: center;
+  width: 60vw;
+  height: 90vh;
+}
+
+.skill-item {
+  background-color: #585656;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item h3 {
+  margin-bottom: 10px;
+  color: #0d0d0d;
+}
+
+.skill-item p {
+  color: #fff;
+}
+
+/*message container*/
+/* ... (previous styles) */
+
+/* Message container */
+.message-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust the grid size here */
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px; /* Adjust margin as needed */
+}
+
+.message-container h2 {
+  background-color: #585656;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  color: #fff;
+}
+
+.message-container p {
+  background-color: #585656;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  color: #fff;
+}
+
+.message-container form {
+  display: grid;
+  gap: 15px;
+}
+
+.message-container label {
+  font-weight: bold;
+  color: #fff;
+}
+
+.message-container input,
+.message-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-container button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message-container button:hover {
+  background-color: #45a049;
+}
+
+

@@ -37,7 +37,7 @@
         <div class="main-container">
             <div class="buttons">
                 <button onclick="showEducation()">Education</button>
-                <button onclick="showSkills()">Skills</button>
+                <button onclick="showSkills()">Internships</button>
             </div>
             <div id="grid-container" class="grid-container">
                 <div id="education-content" class="content">
@@ -48,11 +48,59 @@
                         <p>Year: 2019-2023</p>
                     </div>
                 </div>
-                <div id="skills-content" class="content">
-                    <!--skills content-->
-
+                <div id="intern-content" class="content">
+                    <div class="intern-item">
+                        <div class="intern-item-1">
+                            <h2>1)&nbsp;Exposys Data Labs</h2>
+                            <h5>Web development Intern</h5>
+                            <p><ul>Engineered and implemented a responsive website, employing advanced front-end technologies such as HTML5, CSS3, and JavaScript.</ul></p>
+                            <p><ul>Analyzed UI specifications from Figma to ensure pixel-perfect implementation and seamless integration of the website's visual elements.</ul></p>
+                        </div>
+                        <hr>
+                        <div class="intern-item-2">
+                            <h3>Skybug technologies</h3>
+                            <h5>C++ Programming Intern</h5>
+                            <p><ul>Worked with Skybug Technologies, focused on C++ Programming and Software Development. Executed tasks with precision, exceeding set benchmarks.</ul></p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-grid">
+                <div class="skill-item">
+                    <h3>Front End Development</h3>
+                    <p>Expertise in building responsive and user-friendly interfaces using HTML, CSS, and JavaScript. Proficient in modern front-end frameworks like React.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Back End Development</h3>
+                    <p>Experience in server-side development using technologies like Node.js and Django. Knowledgeable in database management and API integration.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Passionate about creating visually appealing and intuitive designs. Proficient in design tools like Figma and Adobe XD to bring ideas to life.</p>
+                </div>
+            </div>
+        </div>
+        <div class="message-container">
+            <h2>Contact Me</h2>
+            <p>Have a question or want to work together? Feel free to drop me a message.</p>
+            
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </div>
     <script src="main.js"></script>
