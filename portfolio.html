@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranil Bhosale | Web Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,7 +22,7 @@
                     <img src="./imp.jpg" alt="Avatar" class="avatar">
                 </div>
                 <div class="info-main">
-                    <p class="header-subtitle">Hello , I&#x27;m</p>
+                    <p class="header-subtitle">Hello, I'm</p>
                     <p class="header-title">Pranil Bhosale</p>
                     <p class="header-subtitle">Front End Designer | Software Developer | Tech Explorer</p>
                     <div class="contact">
@@ -31,7 +30,7 @@
                         <a href="https://drive.google.com/file/d/18JiH5aFyIboJrw5mmTK2QBQtQJeLmy8J/view?usp=sharing" class="cv-button" target="_blank">Download CV</a>
                     </div>
                 </div> 
-                <div class="info-sub">I'm a software developer with specialize in frontend development, with proficiency in modern web technologies like React.</div>
+                <div class="info-sub">I'm a software developer specializing in frontend development, with proficiency in modern web technologies like React.</div>
             </div>
         </main>
         <div class="main-container">
@@ -39,32 +38,50 @@
                 <button onclick="showEducation()">Education</button>
                 <button onclick="showInternships()">Internships</button>
             </div>
-            <div id="education-container" class="education-container">
-                <div class="education-item">
-                    <h3>National Institute of Technology Srinagar</h3>
-                    <p>Degree: Bachelor of Technology (B.Tech)</p>
-                    <p>Major: Civil Engineering</p>
-                    <p>Year: 2019-2023</p>
-                </div>
-            </div>
-            <div id="internship-container" class="grid-container" style="display: none;">
-                <div class="intern-item">
-                    <div class="intern-item-1">
-                        <h2>1.&nbsp;Exposys Data Labs</h2>
-                        <h4>Web development Intern</h4>
-                        <p><ul>Engineered and implemented a responsive website, employing advanced front-end technologies such as HTML5, CSS3, and JavaScript.</ul></p>
-                        <p><ul>Analyzed UI specifications from Figma to ensure pixel-perfect implementation and seamless integration of the website's visual elements.</ul></p>
+            <div class="content-container">
+                <div id="education-container" class="education-container">
+                    <div class="education-item">
+                        <div>
+                            <h3>National Institute of Technology Srinagar</h3>
+                            <p>Degree: Bachelor of Technology (B.Tech)</p>
+                            <p>Major: Civil Engineering</p>
+                            <p>Year: 2019-2023</p>
+                        </div>
+                        <div>
+                            <h3>SG Ashramshala Jath</h3>
+                            <p>Higher Secondary School</p>
+                            <p>Year: 2019</p>
+                        </div>
+                        <div>
+                            <h3>Jawahar Navodaya Vidyalaya Solapur</h3>
+                            <p>Higher School</p>
+                            <p>Year: 2017</p>
+                        </div>
                     </div>
-                    <hr>
-                    <div class="intern-item-2">
-                        <h2>2.&nbsp;Skybug technologies</h2>
-                        <h4>C++ Programming Intern</h4>
-                        <p><ul>Worked with Skybug Technologies, focused on C++ Programming and Software Development. Executed tasks with precision, exceeding set benchmarks.</ul></p>
+                </div>
+                <div id="internship-container" class="internship-container">
+                    <div class="intern-item">
+                        <div>
+                            <h2>1. Exposys Data Labs</h2>
+                            <h4>Web development Intern</h4>
+                            <p>
+                                <ul>Engineered and implemented a responsive website, employing advanced front-end technologies such as HTML5, CSS3, and JavaScript.</ul>
+                                <ul>Analyzed UI specifications from Figma to ensure pixel-perfect implementation and seamless integration of the website's visual elements.</ul>
+                            </p>
+                        </div>
+                        <div>
+                            <h2>2. Skybug technologies</h2>
+                            <h4>C++ Programming Intern</h4>
+                            <p>
+                                <ul>Worked with Skybug Technologies, focused on C++ Programming and Software Development. Executed tasks with precision, exceeding set benchmarks.</ul>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="skills-container">
+            <h2>Skills</h2>
             <div class="skill-grid">
                 <div class="skill-content">
                     <h3>Front End Development</h3>
@@ -85,16 +102,12 @@
             <form action="">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
-    
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
-    
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required>
-    
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-    
                 <button type="submit">Send Message</button>
             </form>
         </div>

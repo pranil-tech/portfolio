@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .education-container,
+    .internship-container {
+      width: 100%;
+      max-width: 800px;
+      margin-top: 20px;
+    }
+
+    .education-item,
+    .intern-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+
+    .education-item div,
+    .intern-item div {
+      margin-bottom: 15px;
+    }
+
+    h2, h3, h4 {
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="main-container">
+  <div class="buttons">
+    <button onclick="showEducation()">Education</button>
+    <button onclick="showInternships()">Internships</button>
+  </div>
+
+  <div id="education-container" class="education-container">
+    <div class="education-item">
+      <div>
+        <h3>National Institute of Technology Srinagar</h3>
+        <p>Degree: Bachelor of Technology (B.Tech)</p>
+        <p>Major: Civil Engineering</p>
+        <p>Year: 2019-2023</p>
+      </div>
+      <div>
+        <h3>SG Ashramshala Jath</h3>
+        <p>Higher Secondary School</p>
+        <p>Year: 2019</p>
+      </div>
+      <div>
+        <h3>Jawahar Navodaya Vidyalaya Solapur</h3>
+        <p>Higher School</p>
+        <p>Year: 2017</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="internship-container" style="display: none;">
+    <div class="intern-item">
+      <div>
+        <h2>1.&nbsp;Exposys Data Labs</h2>
+        <h4>Web development Intern</h4>
+        <p>
+          <ul>Engineered and implemented a responsive website, employing advanced front-end technologies such as HTML5, CSS3, and JavaScript.</ul>
+          <ul>Analyzed UI specifications from Figma to ensure pixel-perfect implementation and seamless integration of the website's visual elements.</ul>
+        </p>
+      </div>
+      <div>
+        <h2>2.&nbsp;Skybug technologies</h2>
+        <h4>C++ Programming Intern</h4>
+        <p>
+          <ul>Worked with Skybug Technologies, focused on C++ Programming and Software Development. Executed tasks with precision, exceeding set benchmarks.</ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showEducation() {
+    document.getElementById('education-container').style.display = 'block';
+    document.getElementById('internship-container').style.display = 'none';
+  }
+
+  function showInternships() {
+    document.getElementById('education-container').style.display = 'none';
+    document.getElementById('internship-container').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
